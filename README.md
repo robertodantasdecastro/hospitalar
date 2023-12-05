@@ -1,4 +1,4 @@
-<h1>Sistema de Acompanhamento Hospitalar</h1>
+<h1>Sistema de Gestão Hospitalar</h1>
 
 Este repositório contém o código-fonte de um sistema em desenvolvimento para o acompanhamento hospitalar de pacientes em hospitais públicos. O objetivo principal é proporcionar uma plataforma que facilite a gestão do processo desde o credenciamento até o acompanhamento individual do paciente.
 
