@@ -1,8 +1,8 @@
-Sistema de Acompanhamento Hospitalar
+<h1>Sistema de Acompanhamento Hospitalar</h1>
 
 Este repositório contém o código-fonte de um sistema em desenvolvimento para o acompanhamento hospitalar de pacientes em hospitais públicos. O objetivo principal é proporcionar uma plataforma que facilite a gestão do processo desde o credenciamento até o acompanhamento individual do paciente.
 
-Funcionalidades Principais
+<h3>Funcionalidades Principais</h3>
 
 1. Credenciamento e Elaboração do PIA
    A aplicação oferece um processo de credenciamento simples, permitindo que os usuários criem suas contas. Após o credenciamento, é possível elaborar o PIA (Prontuário Individual de Atendimento) para cada paciente.
