@@ -1,0 +1,40 @@
+const express = require("express");
+require("dotenv").config();
+const PORT = process.env.SRVPORT ?? 9000;
+const HOSTSRV = process.env.URL;
+const cors = require("cors");
+const app = express();
+const pool = require("./db");
+
+app.use(cors());
+
+app.get("/usuarios/", async (rec, res) => {
+  try {
+    const usuarios = await pool.query("SELECT * FROM usuarios");
+    res.json(usuarios.rows);
+  } catch (error) {
+    res.json(error);
+  }
+});
+
+app.get("/todos/:userEmail", async (req, res) => {
+  
+  const { userEmail } = req.params;
+  console.log(userEmail);
+
+  try {
+    const todos = await pool.query(
+      "SELECT * FROM todos WHERE user_email = $1",
+      [userEmail]
+    );
+
+    //saida da resposta da query:
+    res.json(todos.rows);
+  
+  } catch (error) {
+    console.error(error);
+  }
+
+});
+
+app.listen(PORT, () => console.log(`Servidor executando no endereço e porta: ${HOSTSRV}:${PORT}!`));

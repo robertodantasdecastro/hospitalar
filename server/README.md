@@ -1,0 +1,1 @@
+npm i bcrypt bcryptjs cookie-parser cors dotenv express express-validator json jsonwebtoken nodemon openai passport passport-jwt pg websocket
